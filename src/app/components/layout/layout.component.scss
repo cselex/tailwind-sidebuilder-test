@@ -1,0 +1,14 @@
+.app-layout {
+  &__container {
+    @apply container max-w-7xl mx-auto px-4;
+  }
+
+  &__wrap {
+    @apply flex justify-between items-center;
+    @apply h-14;
+  }
+
+  main {
+    min-height: 100vh;
+  }
+}

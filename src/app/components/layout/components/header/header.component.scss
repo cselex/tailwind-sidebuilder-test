@@ -1,0 +1,31 @@
+.app-header {
+  @apply bg-amber-300;
+
+  &__logo {
+    @apply font-bold text-lg text-slate-900;
+  }
+
+  &__menu-toggle {
+    @apply relative z-20 lg:hidden flex items-center;
+
+    span {
+      @apply block font-bold text-slate-900 text-xl;
+    }
+  }
+
+  &__nav {
+    @apply absolute lg:relative right-0 top-0;
+    @apply hidden lg:flex lg:justify-end;
+    @apply w-60 lg:w-auto h-screen lg:h-auto;
+    @apply pt-14 lg:pt-0;
+    @apply bg-slate-800 lg:bg-transparent;
+
+    a {
+      @apply block font-bold p-4 text-slate-900 hover:underline;
+
+      &.active {
+        @apply underline;
+      }
+    }
+  }
+}
