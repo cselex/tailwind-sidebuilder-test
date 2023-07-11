@@ -3,9 +3,23 @@
     @apply container max-w-7xl mx-auto px-4;
   }
 
+  &__page-container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+  }
+
   &__wrap {
     @apply flex justify-between items-center;
     @apply h-14;
+  }
+
+  &__content {
+    p {
+      @apply mb-4;
+    }
+  }
+
+  &__btn-cta {
+    @apply inline-block px-10 py-3 font-bold hover:cursor-pointer bg-amber-300 hover:bg-amber-400 text-slate-900 rounded-md shadow-xl;
   }
 
   main {

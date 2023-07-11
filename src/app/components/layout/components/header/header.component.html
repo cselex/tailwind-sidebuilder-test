@@ -1,13 +1,14 @@
 <header class="app-header">
   <div class="app-layout__container">
     <div class="app-layout__wrap">
-      <h1 class="app-header__logo"><a routerLink="/">The Site</a></h1>
+      <h1 class="app-header__logo"><a routerLink="/">The Summer page</a></h1>
       
-      <div class="app-header__menu-toggle">
-        <span>Menü</span>
+      <div class="app-header__menu-toggle" (click)="menuToggle();">
+        <span>Menu</span>
       </div>
 
-      <nav class="app-header__nav">
+      <nav class="app-header__nav" [ngClass]="{'app-header__nav--active': isActive}">
+        <a routerLink="/" ariaCurrentWhenActive="page">Home</a>
         <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
         <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
       </nav>

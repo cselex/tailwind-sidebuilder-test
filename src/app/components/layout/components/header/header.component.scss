@@ -1,12 +1,12 @@
 .app-header {
-  @apply bg-amber-300;
+  @apply bg-amber-300 z-50;
 
   &__logo {
-    @apply font-bold text-lg text-slate-900;
+    @apply font-black text-lg text-slate-900;
   }
 
   &__menu-toggle {
-    @apply relative z-20 lg:hidden flex items-center;
+    @apply relative z-50 lg:hidden flex items-center;
 
     span {
       @apply block font-bold text-slate-900 text-xl;
@@ -14,11 +14,16 @@
   }
 
   &__nav {
+    &--active {
+      @apply block z-20;
+    }
+
     @apply absolute lg:relative right-0 top-0;
-    @apply hidden lg:flex lg:justify-end;
-    @apply w-60 lg:w-auto h-screen lg:h-auto;
+    @apply hidden lg:justify-end;
+    @apply lg:flex #{!important};
+    @apply w-60 lg:w-auto h-auto;
     @apply pt-14 lg:pt-0;
-    @apply bg-slate-800 lg:bg-transparent;
+    @apply bg-amber-500 lg:bg-transparent;
 
     a {
       @apply block font-bold p-4 text-slate-900 hover:underline;

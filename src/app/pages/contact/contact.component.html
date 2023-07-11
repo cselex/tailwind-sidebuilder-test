@@ -1,1 +1,23 @@
-<p>contact works!</p>
+<app-hero [heroImage]="'https://images.unsplash.com/photo-1486927819089-e4d82c5e2444?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'">
+  <ng-container ngProjectAs="[title]">Contact</ng-container>
+</app-hero>
+
+<div class="app-layout__page-container">
+  <div class="app-layout__content">
+    <form action="#" class="contact">
+      <div>
+        <label for="email" class="contact__label">Your email</label>
+        <input type="email" id="email" class="contact__input" placeholder="name@flowbite.com" required>
+      </div>
+      <div>
+        <label for="subject" class="contact__label">Subject</label>
+        <input type="text" id="subject" class="contact__input" placeholder="Let us know how we can help you" required>
+      </div>
+      <div>
+        <label for="message" class="contact__label">Your message</label>
+        <textarea id="message" rows="6" class="contact__input" placeholder="Leave a comment..."></textarea>
+      </div>
+      <button type="submit" class="app-layout__btn-cta">Send message</button>
+    </form>
+  </div>
+</div>

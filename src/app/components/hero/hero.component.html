@@ -1,0 +1,14 @@
+<div class="app-hero">
+  <div class="app-hero__container">
+    <div class="app-hero__wrap">
+      
+      <div class="app-hero__content">
+        <h2 class="app-hero__title"><ng-content select="[title]"></ng-content></h2>
+        <p class="app-hero__subtitle"><ng-content select="[subtitle]"></ng-content></p>
+        <ng-content></ng-content>
+      </div>
+    
+      <img class="app-hero__bg-image" [src]="heroImage" alt="The Summer page">
+    </div>
+  </div>
+</div>
